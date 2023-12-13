@@ -1,3 +1,5 @@
+# Exercise of importing an external module made previously
+
 import pkg.module1 as mod1
 
 fahrenheit = mod1.celsius_to_fahr(60)
