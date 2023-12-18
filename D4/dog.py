@@ -35,11 +35,16 @@ class Dog: # [Dog] adalah kelasnya
 
 
 
-class DogHouse: # nama kelas pakai PascalCase
-    def __init__(self, name):
-        self.name = name
-        self.dogs_adopted = [] # untuk menyimpan list nama-nama anjing yang bakal diisi nanti oleh user, gunakan argumen dengan list kosong (plural), atau `None` (singular); `*args` itu dipakai untuk mengisi list
-        pass #Biasakan pakai ini dulu sebelum selesaikan semuanya/coba satu-satu
+# class DogHouse: # nama kelas pakai PascalCase
+#     def __init__(self, name):
+#         self.name = name
+#         self.dogs_adopted = [] # untuk menyimpan list nama-nama anjing yang bakal diisi nanti oleh user, gunakan argumen dengan list kosong (plural), atau `None` (singular); `*args` itu dipakai untuk mengisi list
+        
+#         # pass #Biasakan pakai ini dulu sebelum selesaikan semuanya/coba satu-satu
+
+class DogHouse:
+    def __init__(self):
+        self.dogs_adopted = []
 
 
 
@@ -59,8 +64,21 @@ if __name__ == "__main__": # untuk memastikan output yang hanya akan berlaku ket
     # data baru, bisa disimpan secara terpisah
 
     hermes.introduction()
-    happyDog = DogHouse('Happy Dog')
+    # happyDog = DogHouse('Happy Dog')
 
-    # ingin menampung `James` dan `Hermes`
+    # # ingin menampung `James` dan `Hermes`
+    # happyDog.dogs_adopted.append(james)
+    # happyDog.dogs_adopted.append(hermes)
+    
+    # print(DogHouse())
+    # print(happyDog.dogs_adopted)
+    
+    happyDog = DogHouse()
     happyDog.dogs_adopted.append(james)
-    happyDog.dogs_adopted.append(hermes)
+    happyDog.dogs_adopted.append(james)
+    
+    print(happyDog.dogs_adopted)
+    
+    
+    
+    

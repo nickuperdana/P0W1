@@ -1,3 +1,4 @@
+# from person import Person
 from person import Person
 import unittest
 
@@ -58,4 +59,7 @@ class PersonTest(unittest.TestCase):
 
 if __name__ == '__main__':
     # verbosity ditambahkan agar hasilnya lebih lengkap
+    Person()
     unittest.main(verbosity=2)
+    
+    Person()
