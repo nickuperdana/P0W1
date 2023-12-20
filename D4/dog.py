@@ -20,6 +20,8 @@ class Dog: # [Dog] adalah kelasnya
     # # kode ini untuk membuat fungsi string, yang mana objek direpresentasikan sebagai string
     def __str__(self):
         print(f"The dog name is {self.name} with the breed is {self.breed} and the fur color is {self.furColor}")
+        
+    
 # class dan kode dipisahkan dengan 2 enter
 
 
